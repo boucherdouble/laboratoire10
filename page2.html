@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: beige;
+            
+            height: 100vh;
+            margin: 0;
+        }
+        .container { 
+
+display: flex;
+
+width: 100%;
+height: 100%;
+justify-content: center;
+
+align-items: center;
+
+        }
+
+.navigateur { 
+
+width: 100%;
+height: 4rem ;
+display: flex;
+background-color: rgb(165, 108, 42);
+color: azure;
+justify-content: right ;
+
+
+}
+
+
+ul {
+display: flex ;
+list-style-type: none;
+margin-right: 2rem;
+}
+
+li { 
+font-size: 2rem;
+    
+    margin-right: 1rem; 
+
+}
+
+        .cube {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation: rotate 5s infinite linear;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateX(0) rotateY(0);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navigateur"> <ul><li>home</li><li>about</li><li>login</li> </ul></nav>
+
+    <div class="container"><div class="cube"></div></div>
+</body>
+</html>
